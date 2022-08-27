@@ -1,0 +1,45 @@
+{
+  "name": "cm6-markdown-editor-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwkleung/CM6-Markdown-Editor-Demo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexwkleung/CM6-Markdown-Editor-Demo/issues"
+  },
+  "homepage": "https://github.com/alexwkleung/CM6-Markdown-Editor-Demo#readme",
+  "dependencies": {
+    "@codemirror/commands": "^6.1.0",
+    "@codemirror/lang-markdown": "^6.0.1",
+    "@codemirror/language": "^6.2.1",
+    "@codemirror/language-data": "^6.1.0",
+    "@codemirror/state": "^6.1.1",
+    "@codemirror/view": "^6.2.1",
+    "@lezer/highlight": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.3",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-katex": "^6.0.2",
+    "remark-gfm": "^3.0.1",
+    "remark-math": "^5.1.1",
+    "remark-toc": "^8.0.1",
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.1",
+    "vite": "^3.0.9"
+  }
+}
