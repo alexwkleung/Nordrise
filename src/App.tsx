@@ -11,9 +11,12 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
+import remarkEmoji from 'remark-emoji'
 import rehypeKatex from 'rehype-katex'
+import rehypeSlug from 'rehype-slug'
 import remarkToc from 'remark-toc'
 import 'katex/dist/contrib/mhchem'
+import simplePlantUML from '@akebifiky/remark-simple-plantuml'
 
 export default function App() {
     //useref hook
@@ -72,7 +75,7 @@ export default function App() {
 
             <div id="previewContainer">
                 <div id="preview">
-                    <ReactMarkdown children={editorStateChange} remarkPlugins={[remarkGfm, remarkMath, remarkToc]} rehypePlugins={[rehypeKatex]} components={{
+                    <ReactMarkdown children={editorStateChange} remarkPlugins={[remarkGfm, remarkMath, remarkToc, [remarkEmoji, {emoticon: true}], simplePlantUML]} rehypePlugins={[rehypeKatex, rehypeSlug]} components={{
                         code({node, inline, className, children, ...props}) {
                         const match = /language-(\w+)/.exec(className || '')
                         return !inline && match ? (

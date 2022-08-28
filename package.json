@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/alexwkleung/Nordrise#readme",
   "dependencies": {
+    "@akebifiky/remark-simple-plantuml": "^1.0.2",
     "@codemirror/commands": "^6.1.0",
     "@codemirror/lang-markdown": "^6.0.1",
     "@codemirror/language": "^6.2.1",
@@ -31,6 +32,8 @@
     "react-markdown": "^8.0.3",
     "react-syntax-highlighter": "^15.5.0",
     "rehype-katex": "^6.0.2",
+    "rehype-slug": "^5.0.1",
+    "remark-emoji": "^3.0.2",
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1",
     "remark-toc": "^8.0.1",
