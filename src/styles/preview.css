@@ -1,9 +1,11 @@
 /* 
+* repo: https://github.com/alexwkleung/Markdown-CSS
+*
 this can be modified to your liking.
 *
 * the stylesheet may not be fully plug-in-play, so please be aware of that. 
 *
-* NOTE: these styles may look a bit off since these haven't been thoroughly tested.
+* NOTE: the styles may look a bit off since they haven't been thoroughly tested.
 */
 
 @font-face {
@@ -12,7 +14,14 @@ this can be modified to your liking.
 }
 
 #previewContainer { 
+    all: revert;
     background-color: #2e3440;
+    width: 50%;
+    height: 100vh;
+    margin-left: 50%;
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 
 p {

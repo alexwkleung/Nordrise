@@ -1,3 +1,11 @@
 .cm-editor.ͼ1.ͼ3.ͼ4.ͼo {
     outline: none;
 }
+
+#editorContainer {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
