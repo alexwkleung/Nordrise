@@ -15,8 +15,8 @@ import remarkEmoji from 'remark-emoji'
 import rehypeKatex from 'rehype-katex'
 import rehypeSlug from 'rehype-slug'
 import remarkToc from 'remark-toc'
-import 'katex/dist/contrib/mhchem'
 import simplePlantUML from '@akebifiky/remark-simple-plantuml'
+import 'katex/dist/contrib/mhchem'
 
 export default function App() {
     //useref hook
