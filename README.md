@@ -12,4 +12,4 @@ This demo is a bit more rigid and slightly fine-tuned compared to my previous de
 
 3) The CSS is not as hack-y (and critically broken) compared to Moonrise.
 
-4) Uses the Nord theme!
+4) Based off the Nord theme!
