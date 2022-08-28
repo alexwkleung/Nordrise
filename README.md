@@ -13,3 +13,5 @@ This demo is a bit more rigid and slightly fine-tuned compared to my previous de
 3) The CSS is not as hack-y (and critically broken) compared to Moonrise.
 
 4) Based off the Nord theme!
+
+Note: If you're planning to add Electron into this demo, there might be some issues when combining it with Vite. So if you don't want to go through the hassle to make it work, I recommend switching to Webpack + Babel as a fallback.
