@@ -30,7 +30,7 @@ export default function App() {
     //useffect hook
     useEffect(() => {
         //editor state
-        const editorState = EditorState.create({
+        const editorState: EditorState = EditorState.create({
             extensions: [
                 markdown({
                     base: markdownLanguage,
@@ -53,13 +53,13 @@ export default function App() {
         }); 
 
         //editor view
-        const editorView = new EditorView({
+        const editorView: EditorView = new EditorView({
             doc: '',
             state: editorState,
             parent: editorRef.current!,
         });
 
-        return () => {
+        return (): void => {
             editorView.destroy();
         }
     }, [editorRef.current]); //dependency array
