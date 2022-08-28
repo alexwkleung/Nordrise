@@ -1,9 +1,11 @@
 /* 
 * repo: https://github.com/alexwkleung/Markdown-CSS
 *
-* this can be modified to your liking.
+* this can be modified to your liking, and is encouraged.
 *
-* the stylesheet may not be fully plug-in-play, so please be aware of that. 
+* you should be aware that copying this into your project can
+* result in conflicting styles that override each other. make sure
+* to compare them before submitting an issue.
 *
 * NOTE: the styles may look a bit off since they haven't been thoroughly tested.
 */
