@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexwkleung/CM6-Markdown-Editor-Demo.git"
+    "url": "git+https://github.com/alexwkleung/Nordrise.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexwkleung/CM6-Markdown-Editor-Demo/issues"
+    "url": "https://github.com/alexwkleung/Nordrise/issues"
   },
-  "homepage": "https://github.com/alexwkleung/CM6-Markdown-Editor-Demo#readme",
+  "homepage": "https://github.com/alexwkleung/Nordrise#readme",
   "dependencies": {
     "@codemirror/commands": "^6.1.0",
     "@codemirror/lang-markdown": "^6.0.1",
