@@ -8,7 +8,7 @@ This demo is a bit more rigid and slightly fine-tuned compared to my previous de
 
 1) Uses TypeScript React + Vite instead of Electron + TypeScript.
 
-2) It does not contain save or open functions, so you'll have to implement it yourself. Instead, I've added some remark/rehype plugins for a better Markdown experience out of the box.
+2) It does not contain open or save functions, so you'll have to implement it yourself. Instead, I've added remark/rehype and katex plugins for a better Markdown experience out of the box.
 
 3) The CSS is not as hack-y (and critically broken) compared to Moonrise.
 

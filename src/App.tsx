@@ -13,17 +13,23 @@ import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import remarkToc from 'remark-toc'
+import 'katex/dist/contrib/mhchem'
 
 export default function App() {
+    //useref hook
     const editorRef = useRef(null);
 
+    //usestate hook
     const [editorStateChange, setEditorStateChange] = useState("");
 
+    //listener (editorview)
     const editorListener = EditorView.updateListener.of((event) => {
         setEditorStateChange(event.state.doc.toString());
     });
 
+    //useffect hook
     useEffect(() => {
+        //editor state
         const editorState = EditorState.create({
             extensions: [
                 markdown({
@@ -46,6 +52,7 @@ export default function App() {
             ]
         }); 
 
+        //editor view
         const editorView = new EditorView({
             doc: '',
             state: editorState,
@@ -53,9 +60,9 @@ export default function App() {
         });
 
         return () => {
-            editorView?.destroy();
+            editorView.destroy();
         }
-    }, [editorRef.current]);
+    }, [editorRef.current]); //dependency array
 
     return (
         <Fragment>
