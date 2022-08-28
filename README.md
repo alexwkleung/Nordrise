@@ -2,7 +2,7 @@
 
 A CodeMirror 6 Markdown editor demo.
 
-Codename: Nordrise.
+Code name: Nordrise.
 
 This demo is a bit more rigid and slightly fine-tuned compared to my previous demo [Moonrise](https://github.com/alexwkleung/Moonrise). However there are some differences between them.
 
