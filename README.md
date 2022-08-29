@@ -53,18 +53,18 @@ Install npm dependencies
 npm install
 ```
 
-Run build step
-
-```bash
-make build
-#or
-npm run build
-```
-
 Run Vite
 
 ```bash
 make dev
 #or
 npm run dev
+```
+
+Building for production:
+
+```bash
+make build
+#or 
+npm run build
 ```
