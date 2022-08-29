@@ -7,7 +7,7 @@ A web-based CodeMirror 6 Markdown editor demo.
 
 Code name: Nordrise.
 
-This demo is a bit more rigid and slightly fine-tuned compared to my previous demo [Moonrise](https://github.com/alexwkleung/Moonrise). However there are some differences between them.
+This demo is a bit more rigid and fine-tuned compared to my previous demo [Moonrise](https://github.com/alexwkleung/Moonrise). However there are some differences between them.
 
 1) Uses TypeScript React + Vite instead of Electron + TypeScript. Since it's web-based, you don't need to install anything to try it out.
 
