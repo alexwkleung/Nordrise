@@ -3,7 +3,7 @@
 ![demo](./img/demo.png)
 ![demo2](./img/demo2.png)
 
-A web-based CodeMirror 6 Markdown editor demo.
+A web-based CodeMirror 6 Markdown editor demo. You can try the demo [here](https://nordrise.vercel.app/).
 
 Code name: Nordrise.
 
