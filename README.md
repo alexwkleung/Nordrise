@@ -29,6 +29,7 @@ This demo is a bit more rigid and slightly fine-tuned compared to my previous de
 - remark-gfm
 - remark-math
 - remark-toc
+- mhchem (KaTeX)
 
 I plan on adding more features, so feel free to submit any requests.
 

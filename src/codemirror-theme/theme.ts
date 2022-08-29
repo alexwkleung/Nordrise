@@ -43,7 +43,8 @@ export const nordTheme = EditorView.theme(
   {
     '&': {
       color: base04,
-      backgroundColor: background
+      backgroundColor: background,
+      fontSize: "14px",
     },
 
     '.cm-content': {

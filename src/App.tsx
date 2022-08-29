@@ -75,7 +75,7 @@ export default function App() {
 
             <div id="previewContainer">
                 <div id="preview">
-                    <ReactMarkdown children={editorStateChange} remarkPlugins={[remarkGfm, remarkMath, remarkToc, [remarkEmoji, {emoticon: true}], simplePlantUML]} rehypePlugins={[rehypeKatex, rehypeSlug]} components={{
+                    <ReactMarkdown children={editorStateChange} skipHtml={true} remarkPlugins={[remarkGfm, remarkMath, remarkToc, [remarkEmoji, {emoticon: true}], simplePlantUML]} rehypePlugins={[rehypeKatex, rehypeSlug]} components={{
                         code({node, inline, className, children, ...props}) {
                         const match = /language-(\w+)/.exec(className || '')
                         return !inline && match ? (
