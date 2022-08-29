@@ -30,7 +30,7 @@ export default function App() {
         setEditorStateChange(event.state.doc.toString());
     });
 
-    //useffect hook
+    //useeffect hook
     useEffect(() => {
         //editor state
         const editorState: EditorState = EditorState.create({
@@ -62,6 +62,7 @@ export default function App() {
             parent: editorRef.current!,
         });
 
+        //destroy editorview in dom
         return (): void => {
             editorView.destroy();
         }
