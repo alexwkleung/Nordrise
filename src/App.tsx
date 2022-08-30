@@ -1,3 +1,7 @@
+import './styles/App.css'
+import './styles/editor.css'
+import './styles/preview.css'
+import './styles/katex.min.css'
 import React, { useState, useEffect, useRef, Fragment } from 'react'
 import { EditorState } from '@codemirror/state'
 import { EditorView, keymap, rectangularSelection, drawSelection, highlightActiveLine, lineNumbers } from '@codemirror/view'
