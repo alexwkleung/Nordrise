@@ -24,6 +24,7 @@
     position: absolute;
     overflow-x: scroll;
     overflow-y: scroll;
+    padding-left: 10px;
 }
 
 p {
