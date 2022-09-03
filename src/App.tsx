@@ -74,6 +74,7 @@ export default function App() {
         }
     }, [editorRef.current]); //dependency array
 
+    //save 
     const save = () => {
         let blob = new Blob([editorStateChange.toString()], { type: "text/plain;charset=utf-8" });
         saveAs(blob, "nordrise.md");
