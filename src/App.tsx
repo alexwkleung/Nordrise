@@ -1,4 +1,5 @@
 import './styles/App.css'
+import './styles/sidebar.css'
 import './styles/editor.css'
 import './styles/preview.css'
 import './styles/katex.min.css'
@@ -21,6 +22,7 @@ import rehypeKatex from 'rehype-katex'
 import rehypeSlug from 'rehype-slug'
 import simplePlantUML from '@akebifiky/remark-simple-plantuml'
 import 'katex/dist/contrib/mhchem'
+import { saveAs } from 'file-saver'
 
 export default function App() {
     //useref hook
@@ -72,8 +74,17 @@ export default function App() {
         }
     }, [editorRef.current]); //dependency array
 
+    const save = () => {
+        let blob = new Blob([editorStateChange.toString()], { type: "text/plain;charset=utf-8" });
+        saveAs(blob, "nordrise.md");
+    }
+
     return (
         <Fragment>
+            <div id="sidebarContainer">
+                <button id="save" onClick={save}><img src="./src/styles/icons/save.png"></img></button>
+            </div>
+
             <div id="editorContainer">
                 <div id="editor" ref={editorRef}></div>
             </div>
