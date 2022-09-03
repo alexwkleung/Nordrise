@@ -3,6 +3,7 @@ import './styles/sidebar.css'
 import './styles/editor.css'
 import './styles/preview.css'
 import './styles/katex.min.css'
+import saveImg from './styles/icons/save.png'
 import React, { useState, useEffect, useRef, Fragment } from 'react'
 import { EditorState } from '@codemirror/state'
 import { EditorView, keymap, rectangularSelection, drawSelection, highlightActiveLine, lineNumbers } from '@codemirror/view'
@@ -83,7 +84,7 @@ export default function App() {
     return (
         <Fragment>
             <div id="sidebarContainer">
-                <button id="save" onClick={save}><img src="./src/styles/icons/save.png"></img></button>
+                <button id="save" onClick={save}><img src={saveImg}></img></button>
             </div>
 
             <div id="editorContainer">
