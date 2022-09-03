@@ -1,4 +1,5 @@
 import './styles/App.css'
+import './styles/sidebar.css'
 import './styles/editor.css'
 import './styles/preview.css'
 import './styles/katex.min.css'
@@ -74,6 +75,11 @@ export default function App() {
 
     return (
         <Fragment>
+            <div id="sidebarContainer">
+                <button id="save" ><img src='./src/styles/icons/save.png'></img></button>
+                <button id="open"><img src="./src/styles/icons/open.png"></img></button>
+            </div>
+
             <div id="editorContainer">
                 <div id="editor" ref={editorRef}></div>
             </div>

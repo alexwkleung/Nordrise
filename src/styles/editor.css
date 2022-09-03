@@ -12,4 +12,5 @@
     position: absolute;
     overflow-x: scroll;
     overflow-y: scroll;
+    margin-left: 50px;
 }

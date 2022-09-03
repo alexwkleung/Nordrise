@@ -42,6 +42,7 @@
   "devDependencies": {
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "@types/wicg-file-system-access": "^2020.9.5",
     "@vitejs/plugin-react": "^2.0.1",
     "vite": "^3.0.9"
   }
